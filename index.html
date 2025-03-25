@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>별밤 뮤직</title>
+    <link rel="icon" href="ppunsig.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7756c67bd5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- GSAP & jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/bgStar.js"></script>
+    <script src="./js/music.js"></script>
+  </head>
+  <body>
+    <section class="top">
+      <h1 class="title Pf">
+        <span>YEJONG </span>
+        <div>별</div>
+        <div>빛</div>
+        <div>이&nbsp;</div>
+        <div>내</div>
+        <div>린</div>
+        <div>다&nbsp;</div>
+      </h1>
+    </section>
+    <section class="bottom">
+      <div class="music-player">
+        <div class="player-container">
+          <div class="album-art">
+            <img id="albumImg" src="./img/ppunsig.png" alt="Album Art" />
+          </div>
+          <div class="info">
+            <h2 id="songTitle">Blizzards</h2>
+            <p id="songDesc">곡 설명이 여기에 표시됩니다.</p>
+            <div class="controls">
+              <button id="prevBtn">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button id="playPauseBtn">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <button id="nextBtn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <audio id="audioPlayer" src="./music/Blizzards.mp3"></audio>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="topBtn">top</button>
+    </section>
+  </body>
+</html>
